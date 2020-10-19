@@ -1,71 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Aastha Sinha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Aastha/index.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="images/3.jpg" sizes="18x18" type="image/png">
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Expresso NITP</title>
-  </head>
-  <body>
 
+<body>
+  <!--Switcher-->
+  <div class="style-switcher hidden" hidden="">
+    <span class="style-switcher__control"></span>
+    <div class="style-switcher__list">
+      <a class="style-switcher__link style-switcher__link--color"></a>
+      <a class="style-switcher__link style-switcher__link--mono"></a>
+    </div>
+  </div>
+  <!--Switcher-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-    <nav class="navbar navbar-expand-md  fixed-top maine-menu">
-      <div class="container">
-        <button class="navbar-toggler ml-auto" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"> <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span> </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#activity" tabindex="-1" aria-disabled="true">Events</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#portfolio" tabindex="-1" aria-disabled="true">Gallery</a></li>
-            <li class="nav-item"> <a class="nav-link" href="blog.html" tabindex="-1" aria-disabled="true">Contact</a></li>
-          </ul>
+  <!--Main menu-->
+  <div class="menu menu--active">
+    <div class="logo">
+      <img src="images/3.jpg" alt="react logo" class="picture"></img>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="menu__wrapper d-none d-lg-block col-md-12">
+          <nav class="">
+            <ul>
+              <li><a href="#">something</a></li>
+              <li><a href="#">something</a></li>
+              <li><a href="#">something</a></li>
+           
+              <li><a href="#">something</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </nav>
-
-    <div class="container-fluid fh5co-home-banner">
-      <div class="card"> <img class="card-img" src="akash/img/banner-img.jpg" alt="">
-        <div class="card-img-overlay">
-          <div class="center-text">
-            <h2 class="card-title">Art and Literary is a medium of expressing your thoughts.
-            </h2>
-            <a href="#" class="btn">
-              <svg width="201" height="51" viewBox="0 0 201 51">
-                <defs>
-                  <style>
-                  .cls-1 {
-                    fill: none;
-                    stroke-width: 1px;
-                    stroke: url(#linear-gradient);
-                  }
-                </style>
-                <linearGradient id="linear-gradient" x1="140.508" y1="50.5" x2="60.492" y2="0.5" gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#e90e65"/>
-                  <stop offset="1" stop-color="#fff"/>
-                </linearGradient>
-              </defs>
-              <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="0.5" y="0.5" width="200" height="50" rx="25" ry="25"/>
-            </svg>
-          Explore</a> </div> 
+        <div class="menu__wrapper col-md-12 d-lg-none">
+          <button type="button" class="menu__mobile-button">
+            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
         </div>
       </div>
     </div>
-    <footer>
-    <div class="copy pt-4 pb-4">
-      <p><a href="index.html" target="_blank"> &copy; 2019 Expresso NITP</a>  &nbsp;  | <-- &nbsp;  <a href="akash/webteam.html" target="_blank">Design by us</a> &nbsp; --> | &nbsp;  All rights reserved</p>
+  </div>
+  <!--Main menu-->
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu d-lg-none mobile-menu--active">
+    <div class="container">
+      <div class="mobile-menu__close">
+        <span><i class="mdi mdi-close" aria-hidden="true"></i></span>
+      </div>
+      <nav class="mobile-menu__wrapper">
+        <ul>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+        </ul>
+      </nav>
     </div>
-  </footer>
-  </body>
+  </div>
+  <!-- Mobile menu -->
+
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+ <p>cnjkdwvberkvgejftbvkgef</p>
+
+  <script src="Aastha/mobile_menu.js"></script>
+  <script src="Aastha/menu.js"></script>
+
+
+</body>
 </html>
