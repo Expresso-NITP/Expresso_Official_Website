@@ -1,0 +1,408 @@
+/*LAPTOP VIEW*/
+.menu.menu--active {
+    background-color: #fff;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
+}
+
+img{
+    float: left;
+    z-index: 100;
+}
+.logo
+{
+    margin: 5px;
+    padding: 8px;
+    width:50px;
+    
+}
+
+.logo img
+{
+    max-height: 50px;
+    border-radius: 50%;
+
+}
+.menu {
+    position: fixed;
+    padding: 0;
+    height: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    transition: all .5s;
+    background-color: black;
+}
+
+div {
+    display: block;
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1140px;
+}
+}
+@media (min-width: 992px){
+.container {
+    max-width: 960px;
+}
+}
+@media (min-width: 768px){
+.container {
+    max-width: 720px;
+}
+}
+@media (min-width: 576px){
+.container {
+    max-width: 540px;
+}
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+div {
+    display: block;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -25px;
+    margin-left: -25px;
+}
+.menu.menu--active .menu__wrapper {
+    margin-top: 20px;
+}
+.menu .menu__wrapper {
+    z-index: 1;
+    margin-top: 0px;
+    transition: all .3s;
+}
+@media (min-width: 992px){
+.d-lg-block {
+    display: block!important;
+}
+}
+.d-none {
+    display: none!important;
+}
+@media (min-width: 768px){
+.col-md-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+
+.menu .menu__wrapper nav {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+
+nav {
+    display: block;
+}
+ol, ul {
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+hr, ol, ul {
+    margin: 0;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+address, dl, ol, ul {
+    margin-bottom: 1rem;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.menu.menu--active .menu__wrapper a {
+    color: #555!important;
+    opacity: 1;
+}
+nav ul li a {
+    padding-left: 50px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+/*LAPTOPVIEW*/
+
+
+/*PHONE VIEW*/
+.menu.menu--active {
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
+}
+.menu {
+    position: fixed;
+    padding: 0;
+    height: 0;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: 70px;
+    transition: all .5s;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.menu.menu--active .menu__wrapper {
+    margin-top: 25px;
+}
+.menu .menu__wrapper {
+    z-index: 200;
+    margin-top: 0px;
+    transition: all .3s;
+}
+.d-none {
+    display: none!important;
+}
+.menu .menu__wrapper nav {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+address, dl, ol, ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+nav ul li {
+    display: inline-block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+.menu.menu--active .menu__wrapper a {
+    color: #555!important;
+    opacity: 1;
+}
+.menu .menu__wrapper nav a {
+    color: #fff;
+    opacity: 1;
+}
+nav ul li a {
+    padding-right: 50px;
+    color: #999;
+}
+
+/*PHONE VIEW*/
+
+.menu.menu--active {
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
+}
+.menu {
+    position: fixed;
+    padding: 0;
+    height: 0;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: 70px;
+    transition: all .5s;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.menu.menu--active .menu__wrapper {
+    margin-top: 10px;
+}
+.menu .menu__wrapper {
+    z-index: 200;
+    margin-top: 0px;
+    transition: all .3s;
+}
+.d-none {
+    display: none!important;
+}
+.menu .menu__wrapper nav {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Roboto Mono,monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+address, dl, ol, ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    display: block;
+    
+}
+nav ul li {
+    display: inline-block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+.menu.menu--active .menu__wrapper a {
+    color: #555!important;
+    opacity: 1;
+}
+.menu .menu__wrapper nav a {
+    color: #fff;
+    opacity: 1;
+}
+nav ul li a {
+    padding-right: 50px;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
