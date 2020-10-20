@@ -1,6 +1,9 @@
 /*LAPTOP VIEW*/
+*{
+  box-sizing: border-box;
+}
 .menu.menu--active {
-    background-color:grey;
+    background-color:white;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
     margin-right: 0px;
 }
@@ -13,8 +16,11 @@ img{
 {
     margin: 5px;
     padding: 8px;
+
     width:50px;
-    
+    transform: translateX(-100rem);
+     animation: slideIn .5s forwards;
+
 }
 
 .logo img
@@ -30,7 +36,7 @@ img{
     top: 0;
     z-index: 100;
     width: 100%;
-    height: 70px;
+    height: 150vh;
     transition: all .5s;
     background-color: black;
 }
@@ -66,7 +72,7 @@ nav ul li {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-right: 15px;
+    /* padding-right: 15px; */
     padding-left: 15px;
     width: 100%;
 }
@@ -80,8 +86,8 @@ div {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -25px;
-    margin-left: -25px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 .menu.menu--active .menu__wrapper {
     margin-top: 20px;
@@ -90,7 +96,7 @@ div {
     z-index: 1;
     margin-top: 0px;
     transition: all .3s;
-    
+
 }
 @media (min-width: 992px){
 .d-lg-block {
@@ -110,21 +116,22 @@ div {
 }
 
 
-.menu .menu__wrapper nav {
+/* .menu .menu__wrapper nav {
     font-size: 14px;
     font-family: Roboto Mono,monospace;
     text-transform: uppercase;
     font-weight: 700;
-}
+} */
 nav {
-    font-size: 12px;
+    display: flex;
+    font-size: 1.6rem;
     line-height: 18px;
     font-family: Roboto Mono,monospace;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
-article, aside, footer, header, nav, section {
+article, aside, footer, header,  section {
     display: block;
 }
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -132,9 +139,6 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 
 
-nav {
-    display: block;
-}
 ol, ul {
     padding: 0;
     list-style: none;
@@ -149,44 +153,136 @@ address, dl, ol, ul {
     margin-bottom: 1rem;
 }
 ul {
-    display: block;
+    display: flax;
     list-style-type: disc;
     margin-block-start: 2em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-    
+
 }
 
 nav ul li {
-    display: inline-block;
+  list-style: none;
+    display: flax;
+    text-align: center;
+      transform: translateX(100rem);
+       animation: slideIn .5s forwards;
 }
 
+
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+    display: flax;
+    /* text-align: -webkit-match-parent; */
+    text-align: center;
 }
 
 nav ul li a {
-    padding-left: 50px;
-    margin-bottom: 20px;
+    padding: 0.5rem ;
+    margin-bottom:  0 1rem;
+    letter-spacing: 2px;
+    position: relative;
 }
+/*aniamtion nav  links*/
+nav ul li:nth-child(4){
+  animation-delay: 0s;
+}
+nav ul li:nth-child(3){
+  animation-delay: .5s;
+}
+nav ul li:nth-child(2){
+  animation-delay: 1s;
+}
+nav ul li:nth-child(1){
+  animation-delay: 1.5s;
+}
+nav ul li a span::before,
+nav ul li a span::after{
+  content:'   ';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+nav ul li a span::before{
+  top: 0;
+  transform-origin: left;
+}
+nav ul li a span::after{
+  bottom: 0;
+  transform-origin: right;
+}
+nav ul li a span:hover::before,
+nav ul li a span:hover::after{
+  transform: scaleX(1);
+}
+@keyframes slideIn{
+  from{
 
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+  }
+  to{
+    transform: translateX(0);
+  }
+
 }
+/* a {
+    background-color: transparent;
+    text-decoration: none;
+     -webkit-text-decoration-skip: objects;
+} */
 /*LAPTOPVIEW*/
 
+
+
+/*MOBILE MENU ANIMATION*/
+.mobile-menu__wrapper ul li:nth-child(4){
+  animation-delay: 0s;
+}
+.mobile-menu__wrapper ul li:nth-child(3){
+  animation-delay: .5s;
+}
+.mobile-menu__wrapper ul li:nth-child(2){
+  animation-delay: 1s;
+}
+.mobile-menu__wrapper ul li:nth-child(1){
+  animation-delay: 1.5s;
+}
+.mobile-menu__wrapper ul li a::before,
+.mobile-menu__wrapper ul li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: crimson;
+  left: 0;
+  transform: scaleX(0);
+  transition: all .5s;
+}
+.mobile-menu__wrapper ul li a::before{
+  top: 0;
+  transform-origin: left;
+}
+.mobile-menu__wrapper ul li a::after{
+  bottom: 0;
+  transform-origin: right;
+}
+.mobile-menu__wrapper ul li a:hover::before,
+.mobile-menu__wrapper ul li a:hover::after{
+  transform: scaleX(1);
+}
 
 /*PHONE VIEW*/
 
 .menu.menu--active {
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
-    
+
 }
 .fa {
+    align-items: left;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -230,7 +326,7 @@ div {
 .menu .menu__wrapper {
     z-index: 100;
     margin-top: 0px;
-    transition: all .3s;
+    transition: all 3s;
 }
 .d-none {
     display: none!important;
@@ -271,7 +367,7 @@ ul {
 }
 nav ul li {
     display: inline-block;
-    
+
 }
 
 li {
@@ -372,7 +468,7 @@ address, dl, ol, ul {
 
 ul {
     display: block;
-    
+
 }
 nav ul li {
     display: inline-block;
@@ -440,7 +536,7 @@ button{
 }
 .mobile-menu .mobile-menu__close {
     color: #fff;
-    transition: all .3s;
+    transition: all .5s;
     position: relative;
     top: 50px;
     background-color: transparent;
@@ -450,7 +546,7 @@ button{
     content: "\F156";
 }
 .mdi:before, .mdi-set {
-   
+
     float: right;
 }
 .mobile-menu .mobile-menu__wrapper {
@@ -465,7 +561,7 @@ button{
     text-align: center;
 }
 nav {
-    
+
     margin-bottom: 30px;
 }
 .fa-bars:before {
@@ -522,11 +618,3 @@ a {
 div {
     display: block;
 }
-
-
-
-
-
-
-
-
