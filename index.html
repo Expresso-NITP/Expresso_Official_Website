@@ -22,23 +22,26 @@
 
   <!--Main menu-->
   <div class="menu menu--active">
-    <div class="logo">
-      <img src="logo/iconexpresso.svg" alt="react logo" class="picture"></img>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="menu__wrapper d-none d-lg-block col-md-12">
-          <nav class="">
-            <ul>
-              <li><a href="#">something</a></li>
-              <li><a href="#">something</a></li>
-              <li><a href="#">something</a></li>
 
-              <li><a href="#">something</a></li>
+    <div class="container">
+      <div class="logo">
+        <img src="logo/iconexpresso.svg" alt="react logo" class="picture"></img>
+      </div>
+      <div class="row">
+
+        <div class="menu__wrapper d-none d-lg-block d-md-block col-sm-12">
+          <nav class="">
+            <!-- <a class="navbar-brand logo" href="index.html"><img src="logo/iconexpresso.svg" alt="EXPRESSO" >EXPRESSO</a> -->
+            <ul>
+              <li><a href="#"><span>something</span></a></li>
+              <li><a href="#"><span>something</span></a></li>
+              <li><a href="#"><span>something</span></a></li>
+
+              <li><a href="#"><span>something</span></a></li>
             </ul>
           </nav>
         </div>
-        <div class="menu__wrapper col-md-12 d-lg-none">
+        <div class="menu__wrapper col-sm-12 d-lg-none d-md-none">
           <button type="button" class="menu__mobile-button">
             <span><i class="fa fa-bars" aria-hidden="true"></i></span>
           </button>
@@ -49,19 +52,19 @@
   <!--Main menu-->
 
   <!-- Mobile menu -->
-  <div class="mobile-menu d-lg-none mobile-menu--active">
+  <div class="mobile-menu d-md-none mobile-menu--active">
+    <div class="mobile-menu__close">
+      <span><i class="fa fa-close" aria-hidden="true"></i></span>
+    </div>
     <div class="container">
-      <div class="mobile-menu__close">
-        <span><i class="fa fa-close" aria-hidden="true"></i></span>
-      </div>
+
       <nav class="mobile-menu__wrapper">
         <ul>
           <li><a href="#">something</a></li>
           <li><a href="#">something</a></li>
           <li><a href="#">something</a></li>
           <li><a href="#">something</a></li>
-          <li><a href="#">something</a></li>
-          <li><a href="#">something</a></li>
+
         </ul>
       </nav>
     </div>
