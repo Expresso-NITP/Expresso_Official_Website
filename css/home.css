@@ -14,8 +14,8 @@ img{
 }
 .logo
 {
-    margin: 5px;
-    padding: 8px;
+    margin: 8px;
+    padding: 5px;
 
     width:50px;
     transform: translateX(-100rem);
@@ -70,7 +70,7 @@ div {
 nav ul li {
     float: right;
 }
-}
+
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -96,7 +96,7 @@ div {
 }
 .menu .menu__wrapper {
     z-index: 1;
-    margin-top: 0px;
+    margin-top: 10px;
     transition: all .3s;
 
 }
