@@ -695,3 +695,13 @@ div {
     transform: rotateX(20deg);
   }
 }
+
+
+/*____________________SVG_________________________*/
+
+@media (max-width: 500px){
+    svg{
+        width: 100%;
+        height: auto;
+    }
+    }
