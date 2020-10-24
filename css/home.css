@@ -629,3 +629,69 @@ a {
 div {
     display: block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header */
+.header{
+  background-color: black;
+  height: cover;
+  width: 100%;
+  color: white;
+
+  margin-top: 70px;
+  text-align: center;
+}
+
+#Circle{
+  animation: wheel 2.5s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+  opacity: .25;
+}
+#Expresso{
+  padding-top: 10px;
+  animation: boldl 2.5s ease-in-out ;
+  transform-origin: top;
+    opacity: .25;
+}#lit{
+  animation: boldl 2.5s ease-in-out ;
+  transform-origin: bottom;
+    opacity: .25;
+}
+@keyframes wheel {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes boldl {
+  from{
+    transform: rotateX(0deg);
+  }
+  to{
+    transform: rotateX(20deg);
+  }
+}
