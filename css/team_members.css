@@ -657,11 +657,6 @@ div {
 
 
 
-
-
-
-
-
 #Links
 {
   text-align: center;
@@ -702,8 +697,8 @@ div {
 
 .col-r
 {
-  margin: 30px;
-  padding: 25px;
+  margin: 18px;
+  padding: 15px;
   border: 2px solid white;
   width: inherit;
   box-shadow: 2px 2px 15px grey;
@@ -741,7 +736,6 @@ div {
 
 .col i
 {
-  color: #e65f78;
   cursor: pointer;
 }
 .col
@@ -755,7 +749,11 @@ div {
   font-family: sans-serif;
 }
 
-
+a {
+    transition: all .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 
