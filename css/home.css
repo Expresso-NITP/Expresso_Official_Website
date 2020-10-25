@@ -203,7 +203,7 @@ nav ul li a span::before,
 nav ul li a span::after{
   content:'   ';
   position: absolute;
-  width: 100%;
+  width: 70%;
   height: 2px;
   background-color: crimson;
   left: 0;
@@ -715,18 +715,22 @@ margin-bottom: 50px;
     }
 
     /*_________________________________COLUMN_______________________*/
-    
- 
+
+
     .column {
         float: left;
         width: 50%;
-        height: 500px; /* Should be removed. Only for demonstration */
+        height: 750px; /* Should be removed. Only for demonstration */
       }
-      
+    .cr{
+      background-color: 		#B80000;
+    }
+    .cw{
+      background-color: 	#282828;
+    }
       /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
       @media screen and (max-width: 990px) {
         .column {
           width: 100%;
         }
       }
-    
