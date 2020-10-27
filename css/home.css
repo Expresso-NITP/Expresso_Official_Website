@@ -720,8 +720,13 @@ margin-bottom: 50px;
     .column {
         float: left;
         width: 50%;
-        height: 750px; /* Should be removed. Only for demonstration */
+        height: 500px; /* Should be removed. Only for demonstration */
       }
+    .dimg{
+        float: left;
+        width: 100%;
+        height: 500px;
+    }
     .cr{
       background-color: 		#B80000;
     }
