@@ -644,125 +644,6 @@ div {
 /*____________________REST PAGE______________________*/
 /*
 
-*
-{
-  margin:0;
-  padding: 0;
-}
-
-
-  * {
-  box-sizing: border-box;
-}
-
-
-
-#Links
-{
-  text-align: center;
-}
-.icons
-{
- text-align:center;
-
-}
-.row{
-  margin: auto;
-}
-.firstl 
-{
-  list-style: none;
-  margin: -10px 8px;
-  display: inline-block;
-  font-size: 22px;
-  padding: 3px 10px;
-  color: #fff;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  transition: .5s;
-  cursor: pointer;
-}
-.firstl li:hover
-{
-  color:#e65f78;
-  border: 3px solid #e65f78;
-  transition: .5s;
-  cursor: col-resize 3px pointer;
-
-}
-
-
-.imgicons
-{
-  width: 170px;
-  height:170px;
-}
-
-.col-r
-{
-    
-  margin: 18px;
-  padding: 15px;
-  border: 2px solid white;
-  width: inherit;
-  box-shadow: 2px 2px 15px grey;
-  cursor: pointer;
-  color:black;
-
-
-}
-.col-r:hover
-{
-
-  border: 2px solid white;
-  box-shadow: 2px 2px 40px grey;
-  transition: 0.3s;
-  transform: scale(1.13);
-
-}
-.d-none {
-    display: none!important;
-}
-@media screen and (max-width: 1200px) {
-  .col-rr {
-    flex: 50%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .row {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (max-width: 1000px) {
-  .col{
-    flex: 50%;
-  }
-}
-@media screen and (min-width: 1001px) {
-    .col{
-      flex: 25%;
-    }
-  }
-
-
-.col i
-{
-  cursor: pointer;
-}
-.col
-{
-  text-align: center;
-  margin-bottom: 10px;
-}
-.l
-{
-  font-weight: 600;
-  font-family: sans-serif;
-}
-
-*/
 
 
 /*______________________________EXTRA_DESIGN_CARDS_________________________________*/
@@ -793,17 +674,21 @@ div {
     position: relative;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+}
+.col-md-4{
+    padding-top:15px;
+    padding-bottom:15px ;
+}
+.col-md-4:hover{
+    box-shadow: 1px 1px 10px #BEBEBE;
+    transition: 0.4s;
 }
 
 .post-cards .post-cards__card {
     transition: all .3s;
 }
 
-*, :after, :before {
-    box-sizing: inherit;
-}
+
 div {
     display: block;
 }
@@ -834,6 +719,15 @@ div {
 .post-cards .post-cards__info {
     border: 1px solid #cfc9c9;
     padding-top: 20px;
-    margin-bottom: 50px;
+    
     text-align: center;
+}
+.post-cards__date{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.post-cards__date1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
 }
