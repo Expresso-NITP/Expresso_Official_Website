@@ -712,6 +712,7 @@ margin-bottom: 50px;
         width: 100%;
         height: auto;
     }
+    
     }
 
     /*_________________________________COLUMN_______________________*/
@@ -720,15 +721,49 @@ margin-bottom: 50px;
     .column {
         float: left;
         width: 50%;
-        height: 500px; /* Should be removed. Only for demonstration */
+        height: 740px; /* Should be removed. Only for demonstration */
       }
-    .dimg{
+      .dimg{
         float: left;
         width: 100%;
-        height: 500px;
+        height: 740px;
     }
+    .d1img{
+        float: left;
+        width: 50%;
+        height: 740px;
+    }
+    @media (max-width: 900px){
+        .d1img{
+            width: 65%;
+        }
+    } 
+    @media (max-width: 800px){
+        .d1img{
+            width: 60%;
+        }
+    } 
+    @media (max-width: 700px){
+        .d1img{
+            width: 70%;
+        }
+    } 
+    @media (max-width: 600px){
+        .d1img{
+            width: 80%;
+        }
+    } 
+    @media (max-width: 500px){
+        .d1img{
+            width: 100%;
+        }
+    }
+
     .cr{
       background-color: 		#B80000;
+    }
+    .c1{
+        background-color: #D3C6B6;
     }
     .cw{
       background-color: 	#282828;
