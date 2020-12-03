@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Expresso NITP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/events.css" rel="stylesheet" type="text/css">
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
+  <link rel="icon" href="../images/iconexpresso.svg" sizes="18x18" type="image/png">
+</head>
+<body>
+  <!--Main menu-->
+  <div class="menu menu--active">
+
+    <div class="">
+      <div class="logo">
+        <a href="../home.html"><img src="../logo/iconexpresso.svg" class="logoimg" alt="EXPRESSO" ></a>
+        <!-- <img src="logo/iconexpresso.svg" alt="react logo" class="picture"></img> -->
+      </div>
+      <div class="row navrow">
+
+        <div class="menu__wrapper d-none d-lg-block d-md-block col-sm-12">
+          <nav class="">
+            <!-- <a class="navbar-brand logo" href="index.html"><img src="logo/iconexpresso.svg" alt="EXPRESSO" >EXPRESSO</a> -->
+            <ul>
+              <li><a href="#"><span>something</span></a></li>
+              <li><a href="#"><span>something</span></a></li>
+              <li><a href="#"><span>something</span></a></li>
+
+              <li><a href="#"><span>something</span></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu__wrapper col-md-12 d-lg-none ">
+          <button type="button" class="menu__mobile-button">
+            <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Main menu-->
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu d-lg-none mobile-menu--active">
+    <div class="mobile-menu__close">
+      <span><i class="fa fa-close" aria-hidden="true"></i></span>
+    </div>
+    <div class="container navcontainer">
+
+      <nav class="mobile-menu__wrapper">
+        <ul>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+          <li><a href="#">something</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <br><br>
+<section id="Links">
+  <br>
+  <br>
+  <br>
+  <div>
+    <h2 style="text-align: center;"><b>EVENTS</b></h2>
+    <br>
+    
+    <section id="portfolio" class="container section">
+      <div class="portfolio-wrapper">
+        <div class="portfolio-cards js-loaded-projects" id="myBtn">
+          <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="Web Application">
+            <div class="col-md-6 col-lg-5 project-card__img">
+              <img class="" src="https://i.imgur.com/c0RYfmN.jpg" alt="project-img">
+            </div>
+            <div class="col-md-6 col-lg-7 project-card__info">
+              <h3 class="project-card__title">Blog Content Generator</h3>
+              <p class="project-card__description">Created a content engine that powers my current blog using PHP and MySQL. The generator uses bootstrap for the admin page to add the blog posts using basic forms. The projects are added to the MySQL database. The project was built from scratch. It has an option to export the contents into a JSON format, which is then consumed by my website and that's what you are looking at.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-wrapper">
+        <div class="portfolio-cards js-loaded-projects">
+          <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="Web Application">
+            <div class="col-md-6 col-lg-5 project-card__img">
+              <img class="" src="https://i.imgur.com/c0RYfmN.jpg" alt="project-img">
+            </div>
+            <div class="col-md-6 col-lg-7 project-card__info">
+              <h3 class="project-card__title">Blog Content Generator</h3>
+              <p class="project-card__description">Created a content engine that powers my current blog using PHP and MySQL. The generator uses bootstrap for the admin page to add the blog posts using basic forms. The projects are added to the MySQL database. The project was built from scratch. It has an option to export the contents into a JSON format, which is then consumed by my website and that's what you are looking at.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+
+<!--------------------------MODALS------------>
+<!-- The Modal -->
+<div id="myModal" class="modal container">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+
+<script src="../js/mobile_menu.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/events.js"></script>
+</body>
+</html>
