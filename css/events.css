@@ -513,13 +513,13 @@ button{
     float: right;
 }
 .menu .menu__mobile-button {
-    color: green;
+    color: red;
     opacity: 1;
     transition: all .3s;
     background-color: black;
     border: none;
     transform: translateX(100rem);
-     animation: slideIn .5s forwards;
+    animation: slideIn .5s forwards;
 }
 .mobile-menu.active {
     height: 100%;
@@ -668,10 +668,11 @@ div {
 /*--------------------row project card--------------------*/
 
 .project-card {
-    margin-left: 0;
+    margin-left: 0px;
     margin-bottom: 40px;
-    transition: box-shadow .3s;
-    margin-right: 0;
+    margin-right: 0px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .row {
     display: -webkit-box;
@@ -681,6 +682,9 @@ div {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+}
+*, :after, :before {
+    box-sizing: inherit;
 }
 
 
@@ -725,8 +729,11 @@ img {
 
 /*---------------project card info----------------*/
 .project-card .project-card__info {
-    border: 1px solid #f1f1f1;
+    border: 1px solid rgb(197, 191, 191);
     padding: 50px 50px 40px 30px;
+    transition: box-shadow .3s;
+    box-shadow: 2px 0px 3px #bdb6b6;
+    
 }
 @media (min-width: 768px){
 .col-md-6 {
