@@ -732,6 +732,7 @@ margin-bottom: 50px;
         float: left;
         width: 50%;
         height: 740px;
+        object-fit: cover;
     }
     @media (max-width: 900px){
         .d1img{
@@ -774,3 +775,8 @@ margin-bottom: 50px;
           width: 100%;
         }
       }
+
+/*_______________________Footer___________________*/
+
+
+
