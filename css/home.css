@@ -776,6 +776,20 @@ margin-bottom: 50px;
         }
       }
 
+/*_____________________quotes___________________*/
+.cw{
+    align-items: center;
+    color: aliceblue;
+}
+.cr{
+    align-items: center;
+    color: aliceblue;
+}
+.quote{
+    padding: 20% 10%;
+}
+
+
 /*_______________________Footer___________________*/
 
 
