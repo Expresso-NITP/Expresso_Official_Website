@@ -1090,7 +1090,7 @@ footer{
  
 	.footer-distributed{
         font: bold 14px;
-        height: 600px;
+        height: 610px;
 	
 	}
  
@@ -1133,4 +1133,71 @@ footer{
 }
 .menu--active .fa-bars{
     color:black;
+}
+
+
+/*_______________MOUSE TOOGLE_____________*/
+go-down {
+    font-size: 3.3rem;
+    position: absolute;
+    bottom: 7.2rem;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.bounceInUp {
+
+    animation-name: bounceInUp;
+}
+* {
+
+    box-sizing: border-box;
+}
+.go-down .mouse {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 26px;
+    height: 42px;
+  
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 26px;
+
+}
+a, button {
+   
+    transition: all .3s;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+  
+}
+.go-down .mouse:after {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    content: '';
+    /* -webkit-transform: translateY(0) scaleY(1) scaleX(1) translateZ(0); */
+    transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
+    /* -webkit-animation: scroll 1.5s -1s cubic-bezier(.68, -.55, .265, 1.55) infinite; */
+    animation: scroll 1.5s -1s cubic-bezier(.68, -.55, .265, 1.55) infinite;
+    opacity: 1;
+    border-radius: 100%;
+    background-color: #fff;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
