@@ -230,7 +230,7 @@ div {
 }
 
 .menu.menu--active .menu__wrapper {
-    margin-top: 0px;
+    margin-top: -10px;
 }
 .menu .menu__wrapper {
     z-index: 200;

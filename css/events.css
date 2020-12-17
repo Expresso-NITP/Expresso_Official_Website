@@ -93,9 +93,6 @@ div {
     margin-right: 25px;
     margin-left: 25px;
 }
-.menu.menu--active .menu__wrapper {
-    margin-top: 20px;
-}
 .menu .menu__wrapper {
     z-index: 1;
     margin-top: 10px;
@@ -223,7 +220,7 @@ div {
     margin-left: -15px;
 }
 .menu.menu--active .menu__wrapper {
-    margin-top: 0px;
+    margin-top: -10px;
 }
 
 .menu .menu__wrapper {
@@ -321,9 +318,6 @@ div {
     margin: auto;
 }
 
-.menu.menu--active .menu__wrapper {
-    margin-top: 0px;
-}
 .menu .menu__wrapper {
     z-index: 200;
     margin-top: 0px;
