@@ -4,6 +4,7 @@
 *{
   box-sizing: border-box;
 }
+
 .menu.menu--active {
     background-color:white;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
@@ -111,7 +112,7 @@ nav {
     display: flex;
     font-size: 1.6rem;
     line-height: 18px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono,monospace,serif,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 10px;
@@ -233,7 +234,7 @@ div {
 nav {
     font-size: 12px;
     line-height: 18px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono,monospace,serif, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 30px;
@@ -330,14 +331,14 @@ div {
 .menu .menu__wrapper nav {
     font-size: 14px;
     line-height:20px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono,monospace,serif,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
 }
 nav {
     font-size: 12px;
     line-height: 18px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono,monospace,serif,sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 30px;
@@ -521,7 +522,7 @@ div {
 .project-card .project-card__title {
     font-size: 18px;
     line-height: 30px;
-    font-family: Roboto Mono,monospace;
+    font-family: Roboto Mono,monospace,serif,sans-serif;
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 700;
