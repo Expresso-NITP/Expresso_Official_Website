@@ -854,7 +854,7 @@ img {
 
 .project-card .project-card__info {
     border: 1px solid rgb(197, 191, 191);
-    padding: 50px 50px 40px 30px;
+    padding: 50px 30px 40px 30px;
     transition: box-shadow .3s;
     box-shadow: 2px 0px 3px #bdb6b6;
     
@@ -920,7 +920,7 @@ h3 {
     line-height: 24px;
     margin-bottom: 45px;
     float: right;
-    font-family: 'Brush Script MT',cursive, Tahoma, Geneva, Verdana, sans-serif;
+    font-family: cursive, Tahoma, Geneva, Verdana, sans-serif;
 }
 p {
     margin-top: 0;
