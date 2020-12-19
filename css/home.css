@@ -499,10 +499,7 @@ ul {
     color: #000!important;
     opacity: 1;
 }
-enu .menu__wrapper nav a {
-    color: #fff;
-    opacity: 1;
-}
+
 nav ul li a {
     padding-right: 50px;
     color: #999;
@@ -1185,9 +1182,9 @@ a:-webkit-any-link {
     position: absolute;
     top: 5px;
     left: 50%;
-    width: 4px;
-    height: 4px;
-    margin-left: -2px;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
     content: '';
     /* -webkit-transform: translateY(0) scaleY(1) scaleX(1) translateZ(0); */
     transform: translateY(0) scaleY(1) scaleX(1) translateZ(0);
