@@ -12,8 +12,76 @@
     "img5 img6 img3 img7"
     "img5 img8 img9 img9"
     
+    
 
 }
+
+/* @media (max-width: 600px){
+    #gallery {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "gallery-p  "
+        "gallery-h2  "
+        "img1"
+        " img2"
+        "img3 "
+        "img4"
+        " img7"
+        "img5 "
+        "img8 "
+        " img9"
+        
+}}
+@media (min-width: 1201px){
+    #gallery {
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p gallery-p"
+    "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img3 img7"
+    "img5 img8 img9 img10"
+    
+}
+}
+@media (max-width: 1200px){
+    #gallery {
+   
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "gallery-p gallery-p gallery-p "
+    "gallery-h2 gallery-h2 gallery-h2 "
+    "img1 img2 img3"
+    "img5 img6 img3 "
+    "img5 img9 img10"
+    
+}
+}
+@media (max-width:900px){
+    #gallery {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "gallery-p gallery-p "
+        "gallery-h2 gallery-h2 "
+        "img1 img2"
+        "img3 img4"
+        "img3 img7"
+        "img5 img6 "
+        "img5 img8 "
+        "img9 img10"
+        
+}
+} */
+
 
 #gallery .gallery-img {
     width: 300px;
