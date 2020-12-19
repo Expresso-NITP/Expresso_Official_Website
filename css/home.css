@@ -664,17 +664,17 @@ div {
   animation: wheel 2.5s ease;
   transform-origin: center;
   transform-box: fill-box;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 #Expresso{
   padding-top: 10px;
   animation: boldl 2.5s ease-in-out ;
   transform-origin: top;
-    opacity: 0.5;
+    opacity: 0.35;
 }#lit{
   animation: boldl 2.5s ease-in-out ;
   transform-origin: bottom;
-    opacity: 0.5;
+    opacity: 0.35;
 }
 @keyframes wheel {
   from{
@@ -880,8 +880,9 @@ div {
 /*------------------h3-------------------*/
 
 .project-card .project-card__title {
-    font-size: 18px;
-    line-height: 30px;
+    
+    font-size: 25px;
+    line-height: 45px;
     font-family: Roboto Mono,monospace;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -915,9 +916,11 @@ h3 {
 /*----------p------------*/
 
 .project-card .project-card__description {
-    font-size: 16px;
+    font-size: 55px;
     line-height: 24px;
     margin-bottom: 45px;
+    float: right;
+    font-family: 'Brush Script MT',cursive, Tahoma, Geneva, Verdana, sans-serif;
 }
 p {
     margin-top: 0;
@@ -1103,7 +1106,20 @@ footer{
  
 	.footer-distributed .footer-center i{
 		margin-left: 0;
-	}
+    }
+    .project-card .project-card__title {
+    
+        font-size: 16px;
+        line-height: 35px;
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    .project-card .project-card__description {
+        font-size: 35px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
  
 }
 @media (min-width: 881px) {
@@ -1118,7 +1134,6 @@ footer{
     .br{
         display: none;
     }
-
  
 }
 
