@@ -91,3 +91,8 @@ function changeImg(changeDir) {
         
     }
 }
+
+
+$('.carousel').carousel({
+    interval: 2000
+  })
