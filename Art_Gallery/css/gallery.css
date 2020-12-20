@@ -258,10 +258,20 @@
 .img-btn-next:hover{
     opacity: 0.8;
 }
+/*__________FOOTER_________*/
 footer{
+    height: 100px;
     bottom: 0;
-   margin-top: 15vh;
+   margin-top: 10vh;
    padding-top: 1vh;
    padding-bottom:1vh ;
     align-items: center;
+}
+.copyright{
+    margin-top: 30px;
+    color:#92999f;
+    text-align: center;
+}
+.menu.menu--active .menu__wrapper {
+    margin-top: -10px;
 }

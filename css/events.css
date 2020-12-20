@@ -321,7 +321,7 @@ div {
 
 .menu .menu__wrapper {
     z-index: 200;
-    margin-top: 0px;
+    margin-top: -10px;
     transition: all .3s;
     float: right;
 }
@@ -584,4 +584,20 @@ p {
 /*_____________modals_images________________*/
 button{
     float: right;
+}
+
+
+/*__________FOOTER_________*/
+footer{
+    height: 100px;
+    bottom: 0;
+   margin-top: 10vh;
+   padding-top: 1vh;
+   padding-bottom:1vh ;
+    align-items: center;
+}
+.copyright{
+    margin-top: 30px;
+    color:#92999f;
+    text-align: center;
 }
