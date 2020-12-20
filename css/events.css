@@ -6,7 +6,7 @@
 }
 
 .menu.menu--active {
-    background-color:white;
+    background-color:black;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);
     margin-right: 0px;
 }
@@ -376,7 +376,7 @@ ul {
 /*scrolling Navbar effect*/
 
 .menu.menu--active .menu__wrapper a {
-    color: #000!important;
+    color: #fff!important;
     opacity: 1;
 }
 .menu .menu__wrapper nav a {
