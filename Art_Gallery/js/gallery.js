@@ -27,7 +27,7 @@ if(galleryImages) {
             
             newImg.onload = function() {
                 let imgwidth = this.width;
-                let calcImgToEdge = ((windowWidth - imgwidth)/2)-80;
+                let calcImgToEdge = ((windowWidth - imgwidth)/2)-200;
 
             let newPrevBtn =document.createElement("a");
             let btnPrevText =document.createTextNode("<");
@@ -86,7 +86,7 @@ function changeImg(changeDir) {
     newImg.onload = function(){
 
         let imgwidth = this.width;
-        let calcImgToEdge = ((windowWidth - imgwidth)/2)-80;
+        let calcImgToEdge = ((windowWidth - imgwidth)/2)-200;
 
         
     }
