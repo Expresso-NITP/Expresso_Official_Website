@@ -601,3 +601,33 @@ footer{
     color:#92999f;
     text-align: center;
 }
+
+/**__________RED____UNDERLINE_______________***/
+
+.faq-title h2 {
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 900;
+    line-height: 1;
+    font-family: Roboto Mono,monospace,serif,sans-serif;
+  }
+  .faq-title h2::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 105px;
+      height: 3px;
+      background: red ;/*  #E91E63; */
+      bottom: -12px;
+      margin-left: -52px;
+      font-family: Roboto Mono,monospace,serif,sans-serif;
+  }
+
+  @media (max-width: 880px) {
+    .faq-title h2{
+        font-size: 28px;
+    }
+ 
+}
