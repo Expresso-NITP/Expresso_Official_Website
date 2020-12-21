@@ -625,4 +625,9 @@ footer{
       font-family: Roboto Mono,monospace,serif,sans-serif;
   }
 
+  @media (max-width: 880px) {
+    .faq-title h2{
+        font-size: 28px;
+    }
  
+}
