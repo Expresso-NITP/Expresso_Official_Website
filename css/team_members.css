@@ -528,11 +528,11 @@ footer{
     content: "";
     position: absolute;
     left: 50%;
-    width: 245px;
+    width: 268px;
     height: 3px;
     background: red ;/*  #E91E63; */
     bottom: -12px;
-    margin-left: -122px;
+    margin-left: -134px;
     font-family: Roboto Mono,monospace,serif,sans-serif;
 }
 
