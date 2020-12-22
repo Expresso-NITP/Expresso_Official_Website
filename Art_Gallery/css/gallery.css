@@ -1,4 +1,5 @@
 /* Gallery container */
+
 /* Page slide 1 */
 @media (min-width: 901px){
     #gallery-1 {
@@ -1126,7 +1127,7 @@
 #gallery-9 .img79 {
     grid-area: img79;
     background-image: url("../thumbs/img79.jpg");
-    
+
 }
 
 #gallery-9 .img80 {
@@ -1276,13 +1277,13 @@ footer{
 }
 
 /* slide button  */
-@media (max-width:750px){#Gallery-carousel .slidebtnl {
-  padding-top: 235vw ;
+@media (max-width:700px){#Gallery-carousel .slidebtnl {
+  padding-top: 245vw ;
 
   margin-left: 10vw;
 }}
-@media (max-width:750px){#Gallery-carousel .slidebtnr {
-  padding-top: 235vw ;
+@media (max-width:700px){#Gallery-carousel .slidebtnr {
+  padding-top: 245vw ;
 
   margin-right:  10vw;
 }}
