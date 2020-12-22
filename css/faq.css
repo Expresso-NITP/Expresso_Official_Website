@@ -421,7 +421,7 @@
     content: "";
     position: absolute;
     left: 50%;
-    width: 60px;
+    width: 62px;
     height: 3px;
     background: red ;/*  #E91E63; */
     bottom: -12px;
@@ -469,7 +469,7 @@
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
-  color: #3B566E;
+  color: black;  /* #3B566E; */
   text-decoration: none !important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -503,7 +503,7 @@
   padding-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
-  color: #6F8BA4;
+  color:#6F8BA4;  
   line-height: 28px;
   letter-spacing: 1px;
   border-top: 1px solid #F3F8FF;
@@ -535,6 +535,22 @@
   }
   .copyright{
       margin-top: 30px;
-      color:#92999f;
+      color: #92999f;
       text-align: center;
   }
+
+
+  /*__________FAQ _____SHOW AND HIDE____________*/
+
+  @media (max-width: 500px) {
+      .more{
+          display: none;
+      }
+ 
+}
+@media (min-width: 501px) {
+    .less{
+        display: none;
+    }
+
+}

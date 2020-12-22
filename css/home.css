@@ -1099,7 +1099,7 @@ footer{
  
 	.footer-distributed{
         font: bold 14px;
-        height: 610px;
+        height: 530px;
 	
 	}
  
@@ -1296,3 +1296,11 @@ a:-webkit-any-link {
     }
  
 }
+
+
+/*__________ABOUT ____________*/
+
+.expresso{
+    font-family: Roboto Mono,monospace,serif,sans-serif;;
+}
+
