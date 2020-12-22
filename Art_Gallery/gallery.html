@@ -1,530 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Art-Gallery</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/gallery.css">
-    <link rel="stylesheet" href="../css/home.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="logo/iconexpresso.svg" sizes="18x18" type="logo/svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Art-Gallery</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="icon" href="logo/iconexpresso.svg" sizes="18x18" type="logo/svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body style="background-color: rgba(0,0,0,.30);">
-    <header>
-  <!--Main menu-->
-  <div class="menu menu--active" style="background-color:black; box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);margin-right: 0px;">
+  <header>
+    <!--Main menu-->
+    <div class="menu menu--active" style="background-color:black; box-shadow: 0 5px 8px 0 rgba(0,0,0,.14);margin-right: 0px;">
 
-    <div class="">
-      <div class="logo">
-        <a href="../home.html"><img src="../logo/iconexpresso.svg" class="logoimg" alt="EXPRESSO" ></a>
-        <!-- <img src="logo/iconexpresso.svg" alt="react logo" class="picture"></img> -->
-      </div>
-      <div class="row navrow">
+      <div class="">
+        <div class="logo">
+          <a href="../home.html"><img src="../logo/iconexpresso.svg" class="logoimg" alt="EXPRESSO"></a>
+          <!-- <img src="logo/iconexpresso.svg" alt="react logo" class="picture"></img> -->
+        </div>
+        <div class="row navrow">
 
-        <div class="menu__wrapper d-lg-block d-md-block col-sm-12">
-          <nav class="">
-            <!-- <a class="navbar-brand logo" href="index.html"><img src="logo/iconexpresso.svg" alt="EXPRESSO" >EXPRESSO</a> -->
-            <ul>
-              <li><a href="../home.html" style="color: #fff; opacity: 1;font-size: smaller; "><span><b style="color: #fff;">HOME</b></span></a></li>
-            </ul>
-          </nav>
+          <div class="menu__wrapper d-lg-block d-md-block col-sm-12">
+            <nav class="">
+              <!-- <a class="navbar-brand logo" href="index.html"><img src="logo/iconexpresso.svg" alt="EXPRESSO" >EXPRESSO</a> -->
+              <ul>
+                <li><a href="../home.html" style="color: #fff; opacity: 1;font-size: smaller; "><span><b style="color: #fff;">HOME</b></span></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--Main menu-->
-</header>
+    <!--Main menu-->
+  </header>
 
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div >
-        <section id="gallery-1" class="wrapper-gallery">
+  <div id="Gallery-carousel" class="carousel slide" data-ride="carousel" data-interval="false" data-pause="hover">
+    <!-- indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#Gallery-carousel" data-slide-to="0" class=" item1 active"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="1" class=" item2"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="2" class=" item3"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="3" class=" item4"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="4" class=" item5"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="5" class=" item6"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="6" class=" item7"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="7" class=" item8"></li>
+      <li data-target="#Gallery-carousel" data-slide-to="8" class=" item9"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active one">
+        <div>
+          <section id="gallery-1" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
             <div class="gallery-img img1">
-                <div><a href="#">NITIN DEO</a></div>
+              <div><a href="#">NITIN DEO</a></div>
             </div>
             <div class="gallery-img img2">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img3">
-                <div><a href="#">INSHA</a></div>
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img4">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
+            <div class="gallery-img img3">
+              <div><a href="#">INSHA</a></div>
+            </div>
+            <div class="gallery-img img4">
+              <div><a href="#">TANZEELUR</a></div>
+            </div>
             <div class="gallery-img img5">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
             <div class="gallery-img img6">
-                <div><a href="#">THATXEEL</a></div>
+              <div><a href="#">THATXEEL</a></div>
             </div>
             <div class="gallery-img img7">
-                <div><a href="#">PURANENDU</a></div>
+              <div><a href="#">PURANENDU</a></div>
             </div>
             <div class="gallery-img img8">
-                <div><a href="#">NITIN</a></div>
+              <div><a href="#">NITIN</a></div>
             </div>
             <div class="gallery-img img9">
-                <div><a href="#">TANZEEL</a></div>
+              <div><a href="#">TANZEEL</a></div>
             </div>
-          
-         
-      
-      </section>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-1">
-        <section id="gallery-2" class="wrapper-gallery">
+      <div class="carousel-item two">
+        <div class="glr-1">
+          <section id="gallery-2" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
             <div class="gallery-img img10">
-                <div><a href="#">NITIN DEO</a></div>
+              <div><a href="#">NITIN DEO</a></div>
             </div>
             <div class="gallery-img img11">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img12">
-                <div><a href="#">INSHA</a></div>
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img13">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
+            <div class="gallery-img img12">
+              <div><a href="#">INSHA</a></div>
+            </div>
+            <div class="gallery-img img13">
+              <div><a href="#">TANZEELUR</a></div>
+            </div>
             <div class="gallery-img img14">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
             <div class="gallery-img img15">
-                <div><a href="#">THATXEEL</a></div>
+              <div><a href="#">THATXEEL</a></div>
             </div>
             <div class="gallery-img img16">
-                <div><a href="#">PURANENDU</a></div>
+              <div><a href="#">PURANENDU</a></div>
             </div>
             <div class="gallery-img img17">
-                <div><a href="#">NITIN</a></div>
+              <div><a href="#">NITIN</a></div>
             </div>
             <div class="gallery-img img18">
-                <div><a href="#">TANZEEL</a></div>
+              <div><a href="#">TANZEEL</a></div>
             </div>
-          
-         
-      
-      </section>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item three">
+        <div class="glr-2">
+          <section id="gallery-3" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
             <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+              <div><a href="#">NITIN DEO</a></div>
             </div>
             <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
+            <div class="gallery-img img21">
+              <div><a href="#">INSHA</a></div>
+            </div>
+            <div class="gallery-img img22">
+              <div><a href="#">TANZEELUR</a></div>
+            </div>
             <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
             <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+              <div><a href="#">THATXEEL</a></div>
             </div>
             <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+              <div><a href="#">PURANENDU</a></div>
             </div>
             <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+              <div><a href="#">NITIN</a></div>
             </div>
             <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+              <div><a href="#">TANZEEL</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img28">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item four">
+        <div class="glr-2">
+          <section id="gallery-4" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+
+            <div class="gallery-img img29">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img30">
+              <div><a href="#">INSHA</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img31">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img32">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img33">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+            <div class="gallery-img img34">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img35">
+              <div><a href="#">NITIN</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img36">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+            <div class="gallery-img img37">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+            <div class="gallery-img img60">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+            <div class="gallery-img img62">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item five">
+        <div class="glr-2">
+          <section id="gallery-5" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+            <div class="gallery-img img38">
+              <div><a href="#">NITIN DEO</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img39">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img40">
+              <div><a href="#">INSHA</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img41">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img42">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+
+            <div class="gallery-img img43">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img44">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img49">
+              <div><a href="#">NITIN</a></div>
+            </div>
+
+            <div class="gallery-img img47">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item six">
+        <div class="glr-2">
+          <section id="gallery-6" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+            <div class="gallery-img img48">
+              <div><a href="#">NITIN DEO</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img50">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img51">
+              <div><a href="#">INSHA</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img52">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img53">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+            <div class="gallery-img img54">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img55">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img56">
+              <div><a href="#">PURANENDU</a></div>
+            </div>
+
+            <div class="gallery-img img45">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item seven">
+        <div class="glr-2">
+          <section id="gallery-7" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+            <div class="gallery-img img46">
+              <div><a href="#">NITIN DEO</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img57">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img58">
+              <div><a href="#">INSHA</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img59">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img61">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+            <div class="gallery-img img63">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img64">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img65">
+              <div><a href="#">NITIN</a></div>
+            </div>
+            <div class="gallery-img img70">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+            <div class="gallery-img img67">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item eight">
+        <div class="glr-2">
+          <section id="gallery-8" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+            <div class="gallery-img img66">
+              <div><a href="#">NITIN DEO</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img68">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img69">
+              <div><a href="#">INSHA</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img71">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img72">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+            <div class="gallery-img img73">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img74">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img75">
+              <div><a href="#">NITIN</a></div>
+            </div>
+            <div class="gallery-img img76">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
+      <div class="carousel-item nine">
+        <div class="glr-2">
+          <section id="gallery-9" class="wrapper-gallery">
             <p>Expresso NITP</p>
             <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
+
+            <div class="gallery-img img77">
+              <div><a href="#">TANZEELUR REHMAN</a></div>
             </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
+            <div class="gallery-img img78">
+              <div><a href="#">INSHA</a></div>
             </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
+            <div class="gallery-img img79">
+              <div><a href="#">TANZEELUR</a></div>
             </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
+            <div class="gallery-img img80">
+              <div><a href="#">AKASH DEEP NARAYAN</a></div>
             </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
+            <div class="gallery-img img81">
+              <div><a href="#">THATXEEL</a></div>
             </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
+            <div class="gallery-img img82">
+              <div><a href="#">PURANENDU</a></div>
             </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
+            <div class="gallery-img img83">
+              <div><a href="#">NITIN</a></div>
             </div>
-          
-         
-      
-      </section>
+            <div class="gallery-img img84">
+              <div><a href="#">TANZEEL</a></div>
+            </div>
+
+
+
+          </section>
+        </div>
       </div>
+
+
+
     </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
-            <p>Expresso NITP</p>
-            <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
-            </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
-            </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
-            </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
-            </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
-            </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
-            </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
-            </div>
-          
-         
-      
-      </section>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
-            <p>Expresso NITP</p>
-            <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
-            </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
-            </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
-            </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
-            </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
-            </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
-            </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
-            </div>
-          
-         
-      
-      </section>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="glr-2">
-        <section id="gallery-3" class="wrapper-gallery" >
-            <p>Expresso NITP</p>
-            <h2>Art Gallery</h2>
-            <div class="gallery-img img19">
-                <div><a href="#">NITIN DEO</a></div>
-            </div>
-            <div class="gallery-img img20">
-                <div><a href="#">TANZEELUR REHMAN</a></div>
-            </div> 
-            <div class="gallery-img img21">
-                <div><a href="#">INSHA</a></div>
-            </div>
-             <div class="gallery-img img22">
-                <div><a href="#">TANZEELUR</a></div>
-            </div> 
-            <div class="gallery-img img23">
-                <div><a href="#">AKASH DEEP NARAYAN</a></div>
-            </div>
-            <div class="gallery-img img24">
-                <div><a href="#">THATXEEL</a></div>
-            </div>
-            <div class="gallery-img img25">
-                <div><a href="#">PURANENDU</a></div>
-            </div>
-            <div class="gallery-img img26">
-                <div><a href="#">NITIN</a></div>
-            </div>
-            <div class="gallery-img img27">
-                <div><a href="#">TANZEEL</a></div>
-            </div>
-          
-         
-      
-      </section>
-      </div>
-    </div>
+    <a class="carousel-control-prev slidebtnl" href="#Gallery-carousel" role="button" data-slide="next">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next slidebtnr" href="#Gallery-carousel" role="button" data-slide="prev">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 
 
 
-<!-- <div class="glr">
+  <!-- <div class="glr">
   <section id="gallery" class="wrapper-gallery">
       <p>Expresso NITP</p>
       <h2>Art Gallery</h2>
@@ -533,13 +446,13 @@
       </div>
       <div class="gallery-img img2">
           <div><a href="#">TANZEELUR REHMAN</a></div>
-      </div> 
+      </div>
       <div class="gallery-img img3">
           <div><a href="#">INSHA</a></div>
       </div>
        <div class="gallery-img img4">
           <div><a href="#">TANZEELUR</a></div>
-      </div> 
+      </div>
       <div class="gallery-img img5">
           <div><a href="#">AKASH DEEP NARAYAN</a></div>
       </div>
@@ -555,23 +468,24 @@
       <div class="gallery-img img9">
           <div><a href="#">TANZEEL</a></div>
       </div>
-    
-   
+
+
 
 </section>
 </div> -->
 
-<footer style="background-color: black";>
-  
- 
+  <footer style="background-color: black" ;>
+
+
     <p class="copyright">Copyright@ Expresso NITP</p>
 
-</div>
-</footer>
+    </div>
+  </footer>
 
 
 
   <script src="./js/gallery.js"></script>
 
 </body>
+
 </html>

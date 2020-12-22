@@ -11,7 +11,7 @@ if(galleryImages) {
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
             let getImgUrlPos = getFullImgUrl.split("/thumbs/");
             let setNewImgUrl = getImgUrlPos[1].replace('")','');
-            
+
             getLatestOpenedImg = index + 1;
 
             let container = document.body;
@@ -24,7 +24,7 @@ if(galleryImages) {
             newImgWindow.appendChild(newImg);
             newImg.setAttribute("src", "./Img/" + setNewImgUrl);
             newImg.setAttribute("id", "current-img" );
-            
+
             newImg.onload = function() {
                 let imgwidth = this.width;
                 let calcImgToEdge = ((windowWidth - imgwidth)/2)-200;
@@ -65,13 +65,13 @@ function changeImg(changeDir) {
     getImgWindow.appendChild(newImg);
 
     let calcNewImg ;
-   
+
     if(changeDir === 0) {
         calcNewImg =getLatestOpenedImg - 1;
         if(calcNewImg < 1) {
             calcNewImg=galleryImages.length;
         }
-    } 
+    }
     else  if(changeDir === 1) {
         calcNewImg =getLatestOpenedImg + 1;
         if(calcNewImg > galleryImages.length) {
@@ -88,11 +88,6 @@ function changeImg(changeDir) {
         let imgwidth = this.width;
         let calcImgToEdge = ((windowWidth - imgwidth)/2)-200;
 
-        
+
     }
 }
-
-
-$('.carousel').carousel({
-    interval: 2000
-  })
