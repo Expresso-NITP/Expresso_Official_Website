@@ -1277,13 +1277,23 @@ footer{
 }
 
 /* slide button  */
-@media (max-width:700px){#Gallery-carousel .slidebtnl {
-  padding-top: 245vw ;
+@media (max-width:560px){#Gallery-carousel .slidebtnl {
+    padding-top: 270vw ;
+  
+    margin-left: 10vw;
+  }}
+  @media (max-width:560px){#Gallery-carousel .slidebtnr {
+    padding-top: 270vw ;
+  
+    margin-right:  10vw;
+  }}
+@media (min-width:561px){#Gallery-carousel .slidebtnl {
+  padding-top: 240vw ;
 
   margin-left: 10vw;
 }}
-@media (max-width:700px){#Gallery-carousel .slidebtnr {
-  padding-top: 245vw ;
+@media (min-width:561px){#Gallery-carousel .slidebtnr {
+  padding-top: 240vw ;
 
   margin-right:  10vw;
 }}
