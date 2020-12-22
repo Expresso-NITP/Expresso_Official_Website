@@ -1768,11 +1768,11 @@ footer{
       content: "";
       position: absolute;
       left: 50%;
-      width: 110px;
+      width: 190px;
       height: 3px;
       background: red ;/*  #E91E63; */
       bottom: -12px;
-      margin-left: -55px;
+      margin-left: -97px;
       font-family: Roboto Mono,monospace,serif,sans-serif;
   }
   @media (max-width: 880px) {
