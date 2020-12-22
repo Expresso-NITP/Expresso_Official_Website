@@ -550,7 +550,7 @@ footer{
       content: "";
       position: absolute;
       left: 50%;
-      width: 220px;
+      width: 222px;
       height: 3px;
       background: red ;/*  #E91E63; */
       bottom: -12px;
@@ -559,10 +559,10 @@ footer{
   }
   @media (max-width: 880px) {
     .faq-title1 h2{
-        font-size: 28px;
+        font-size: 26px;
     }
     .faq-title2 h2{
-        font-size: 28px;
+        font-size: 26px;
     }
  
 }

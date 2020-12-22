@@ -1277,7 +1277,7 @@ a:-webkit-any-link {
     display: inline-block;
     font-weight: 900;
     line-height: 1;
-    font-family: Roboto Mono,monospace,serif,sans-serif;
+    font-family: Roboto Mono,monospace;
   }
   .faq-title h2::before {
       content: "";
@@ -1288,7 +1288,7 @@ a:-webkit-any-link {
       background: red ;/*  #E91E63; */
       bottom: -12px;
       margin-left: -116px;
-      font-family: Roboto Mono,monospace,serif,sans-serif;
+      font-family: Roboto Mono,monospace;
   }
   @media (max-width: 880px) {
     .faq-title h2{
@@ -1301,6 +1301,7 @@ a:-webkit-any-link {
 /*__________ABOUT ____________*/
 
 .expresso{
-    font-family: Roboto Mono,monospace,serif,sans-serif;;
+    
+    font-family: Roboto Mono,monospace;
 }
 
