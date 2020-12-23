@@ -479,7 +479,7 @@ div {
     text-align: center;
 }
 .post-cards__date{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto Mono,monospace;
     
 }
 
@@ -566,24 +566,36 @@ footer{
     }
  
 }
-.post-cards__info .footer-icons{
-	margin-top: 25px;
+
+
+/*__________ICONS________*/
+.footer-icons{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
  
-.post-cards__info .footer-icons a{
+.footer-icons a{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:rgba(0,0,0,.05);
-	border-radius: 2px;
- 
-	font-size: 20px;
-	color: rgb(181,130,0);
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
+	background-color: black;
+    border-radius: 50%;
+    line-height: 35px;
+	font-size: 17px;
+	color: white;
+    text-align: center;
+    margin-right: 3px;
+    opacity:0.8;
 }
+.footer-icons a:hover{
+	cursor: pointer;
+    background-color: grey;
+    color: white;
+    transition: 0.3s ease-in;
+    transition: 0.3s ease-out;
+
+}
+ 
+
  
