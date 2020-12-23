@@ -566,3 +566,24 @@ footer{
     }
  
 }
+.post-cards__info .footer-icons{
+	margin-top: 25px;
+}
+ 
+.post-cards__info .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:rgba(0,0,0,.05);
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: rgb(181,130,0);
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
