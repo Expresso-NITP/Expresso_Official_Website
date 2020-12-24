@@ -15,7 +15,7 @@ Aakash Deep Narayan | [k-akash-i](https://github.com/k-akash-i)
 Aastha Sinha | [AasthaSinha2305](https://github.com/AasthaSinha2305)
 Rohit Kumar Singh | [voidrohit](https://github.com/voidrohit)
 Simran | [roy15simrn](https://github.com/roy15simrn)
-Abhishek Kumar | [abhishekh](https://github.com/abhishekh)
+Abhishek Kumar | [abby297](https://github.com/abby297)
 ## How much time it took to complete the whole website
 It took us around 3 months.<br>We started our work way back in the month of October and finished the whole project/ Website by the end of December.
 ## Is the Website Responsive
