@@ -585,7 +585,9 @@ p {
 button{
     float: right;
 }
-
+.btn{
+    float: right;
+}
 
 /*__________FOOTER_________*/
 footer{
@@ -604,6 +606,7 @@ footer{
 
 /**__________RED____UNDERLINE_______________***/
 
+
 .faq-title h2 {
     font-size: 30px;
     position: relative;
@@ -616,8 +619,8 @@ footer{
   .faq-title h2::before {
       content: "";
       position: absolute;
-      left: 50%;
-      width: 105px;
+      left: 25%;
+      width: 230px;
       height: 3px;
       background: red ;/*  #E91E63; */
       bottom: -12px;
