@@ -1,31 +1,34 @@
 <html>
-    <head>
-        <title>
-            Registration Window
-        </title>
-        <link rel="stylesheet" href="registration-css.css">
 
-    </head>
-    <body >
-        
-               <div class="whole">
-            <div class="header">
-                <img class="logo" src="download.png" alt=""><h1>Register here.</h1></div>
-        <form class="form">
+<head>
+    <title>
+        Registration Window
+    </title>
+    <link rel="stylesheet" href="registration-css.css">
+
+</head>
+
+<body>
+
+    <div class="whole">
+        <div class="header">
+            <img class="logo" src="download.png" alt="">
+            <h1>Register here.</h1>
+        </div>
+        <form class="html_form form" onsubmit="return validation()" name="google-sheet" method="post">
             <h2>Name</h2>
-            <input class="fname"  type="text">
-            <label class="flabel">First Name</label>
-            <input class="lastname" type="text">  
-            <label class="lastlabel">Last Name</label>    
+            <input class="fname" id="username" name="Name" placeholder="Full Name " required type="text">
+            <label class="flabel">Name</label>
+
             <h2>Roll No.</h2>
-            <input class="firstname" type="text">
-            <label class="firstlabel">Roll no.</label>
+            <input class="firstname" type="text" id="rollno" name="Rollno" placeholder="Roll No " required>
+
             <h2>Email id</h2>
-            <input class="firstname" type="text" placeholder="abcd@gmail.com">
+            <input class="firstname" type="email" id="email" name="Email ID" placeholder="abc@ijk.com" required>
             <h2>Phone No.</h2>
-            <input class="firstname" type="text">
+            <input class="firstname" type="number" name="Number" placeholder="Contact Number" required>
             <h2>Department</h2>
-            <select class="department" name="department">
+            <select class="department" name="Department" required>
                 <option disabled="disabled" selected="selected">--choose</option>
                 <option>CSE</option>
                 <option>ECE</option>
@@ -36,7 +39,7 @@
                 <option>Imsc</option>
             </select>
             <h2>Current Semester</h2>
-            <select class="department" name="semester">
+            <select class="department" name="Semester" required>
                 <option disabled="disabled" selected="selected">--choose</option>
                 <option>3rd</option>
                 <option>5th</option>
@@ -44,22 +47,61 @@
                
             </select>
             <button class="submit" type="submit" onclick="alert('DONE👍 All the best for the competetion!😊')">Register</button>
-           
 
-            
-        
-           
-           
+
+
+
+
+
         </form>
-        </div>
-        
-    
-        
-        
-    
+    </div>
 
 
 
-        
-    </body>
+
+
+
+
+
+    <script type="text/javascript">
+        function validation() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
+            var usercheck = /^[A_Za-z]{3,30}$/;
+            var emailcheck = /^[A-Za-z_0-9.]{3,}@[A-A_Za-z]{3,}[.]{1}[A_Za-z.]{2,6}$/;
+            var numbercheck = /^[6789][0-9]{9}$/;
+            if (usercheck.test(username)) {
+                document.getElementById('errorname').innerHTML = " ";
+            } else {
+                document.getElementById('errorname').innerHTML = " ";
+                return false;
+            }
+            if (emailcheck.test(email)) {
+                document.getElementById('erroremail').innerHTML = " ";
+            } else {
+                document.getElementById('errornumber').innerHTML = " ";
+            }
+            if (numbercheck.test(number)) {
+                document.getElementById('errornumber').innerHTML = " ";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        // const scriptURL = 'https://script.google.com/macros/s/AKfycbyp9P0lvz_PgFfHg9G7yfteUHdBxwGzzlRYBxGyC8e6UI_JPtri07bvXM0UZ8quA8pxKA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyp9P0lvz_PgFfHg9G7yfteUHdBxwGzzlRYBxGyC8e6UI_JPtri07bvXM0UZ8quA8pxKA/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
 </html>
