@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Valentine Form</title>
+<link rel="stylesheet" href="valentine_form.css">
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+  <script>
+    function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/5VE3clKt1jzXrkx3/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+            success: function(){
+                alert("Form Data Submitted :)")
+            },
+            error: function(){
+                alert("There was an error :(")
+            }
+        });
+    }
+</script>
+</head>
+<body>
+    
+<div class="whole">
+        <div class="header">
+            <img class="logo" src="download.png" alt="">
+            <h1>It's time to Express!! 💕</h1>
+        </div>
+        <div class="html_form form">
+
+        
+  <form id="myForm"  >
+ 
+        <h2>Your Valentine's Instagram Handle</h2>
+   
+        <input class="fname" name="ig_username" type="text" placeholder="Instagram Handle " required />
+   
+      
+    <br/>
+    
+    <h2 >Background Music(If you want to dedicate)</h2>
+  
+    <input class="fname" name="song" placeholder="Song 🎶"/>
+    <br/>
+    <h2>Your Secret Message</h2>
+  
+    <textarea class="firstname"name="discription" type="text" placeholder="Secret Message 💌"required /></textarea>
+    <br/>
+
+  
+
+  </form>
+  <button class="submit"onclick="SubForm()">Submit</button>
+</div>
+  </div>
+</body>
+</html>
